@@ -1,0 +1,67 @@
+﻿
+<html lang="en" ng-app="vikasparthApp">         
+<head>
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vikas Kumar Sharma</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">    
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <!--<link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">-->
+    <link href="/app/css/app.css" rel="stylesheet"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular-route.js"></script>
+	
+    <!--<script src="~/Scripts/angular.js"></script>-->
+    <!--<script src="~/Scripts/angular-route.js"></script>-->
+    
+    <script src="/app/app.module.js"></script>
+    <script src="/app/app.config.js"></script>
+    <script src="/app/whoami/whoami.module.js"></script>
+    <script src="/app/whoami/whoami.component.js"></script>
+    <script src="/app/Resume/resume.module.js"></script>
+    <script src="/app/Resume/resume.component.js"></script>
+    <script src="/app/Passions/passions.module.js"></script>
+    <script src="/app/Passions/passions.component.js"></script>
+    <script src="/app/Blogs/blogs.module.js"></script>
+    <script src="/app/Blogs/blogs.component.js"></script>
+      
+</head>
+<body>
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Me</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">                    
+                    <li><a href="#!Resume">Profile</a></li>
+                    <li><a href="#!Passions">Passions</a></li>                    
+                    <li><a href="#!Blogs">Blogs</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="row">
+       
+        <div class="col-md-12">
+            <ng-view>
+                
+            </ng-view>
+        </div>
+        <div class="col-md-12"> 
+            
+        </div>
+    </div>
+    <footer>
+         VikasParth.com will continue to Evolve, Please stay tuned for updates
+    </footer>
+</body>
+
+</html>
